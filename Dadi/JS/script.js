@@ -33,3 +33,7 @@ else {
 
 //stampiamo il risultato
 console.log(risultato);
+
+numeroGiocatore.innerHTML = `Il numero del giocatre é: ${numGiocatore}`; 
+numeroPC.innerHTML = `Il numero del Pc è: ${numPC}`;
+vincitore.innerHTML = risultato;
