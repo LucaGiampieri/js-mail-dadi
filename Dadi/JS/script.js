@@ -28,8 +28,8 @@ else if (numGiocatore < numPC){
 }
 //se sono pari
 else {
-    risultato =
-    'La partita finisce in parità!';
+    risultato = 'La partita finisce in parità!';
 }
 
+//stampiamo il risultato
 console.log(risultato);

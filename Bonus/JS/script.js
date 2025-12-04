@@ -20,10 +20,6 @@ else{
     console.log('Le parole hanno la stessa lunghezza e te le metto in ordine di input:', primaParola, secondaParola)
 }
 
-
-
-
-
 /* JSnack 5
 Crea un array vuoto. 
 Chiedi per 6 volte all’utente di inserire un numero, 

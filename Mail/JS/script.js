@@ -34,7 +34,7 @@ const mailUtente = prompt('Inserisci la tua mail');
 
 //creiamo una variabile per l'esito
 
-let esito = 'La tua mail non è presente tra quella degli invitati, non puoi accedere';
+let esito = false;
 
 //applichiamo il ciclo for per andare a scavare tra le mail in lista
 
@@ -42,10 +42,22 @@ for (let i = 0; i < mail.length; i++){
 
     //andiamo a verificare se la mail è presente tra quella degli invitati
     if (mail[i] === mailUtente){
-        esito = 'La tua mail é presente tra quella degli invitati, puoi accedere'
+        esito = true;
     }
 }
 
+//andiamo a far scrivere l'output desiderato
+ let esitoScritto = '';
+
+ //per output positivo
+if (esito === true) {
+    esitoScritto = 'La tua mail è tra quella degli invitati: ACCEDI'
+}
+//per output negativo
+else{
+    esitoScritto = 'La tua mail non è presente tra quella degli invitati: NON PUOI ACCEDERE'
+}
+
 //stampiamo il risultato
-console.log(esito);
-mioEsito.innerHTML = esito
+console.log(esitoScritto);
+mioEsito.innerHTML = esitoScritto;
