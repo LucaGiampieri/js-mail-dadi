@@ -24,10 +24,28 @@ const mail = [
     'utente.12@gmail.com',
     'utente.13@gmail.com',
     'utente.14@gmail.com',
-    'utente.15gmail.com'
+    'utente.15@gmail.com'
 ]
 
 //chiedimao all'utente la sua mail
 const mailUtente = prompt('Inserisci la tua mail');
 
 //andiamo a verificare se la mail dell'utente sia presente o meno
+
+//creiamo una variabile per l'esito
+
+let esito = 'La tua mail non è presente tra quella degli invitati, non puoi accedere';
+
+//applichiamo il ciclo for per andare a scavare tra le mail in lista
+
+for (let i = 0; i < mail.length; i++){
+
+    //andiamo a verificare se la mail è presente tra quella degli invitati
+    if (mail[i] === mailUtente){
+        esito = 'La tua mail é presente tra quella degli invitati, puoi accedere'
+    }
+}
+
+//stampiamo il risultato
+console.log(esito);
+mioEsito.innerHTML = esito
